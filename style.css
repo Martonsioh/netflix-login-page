@@ -8,19 +8,27 @@
 }
 :root{
 --clr: rgb(217,25,33);
---text:#fff;
+--text:#FFFFFF;
 --subtext:#737373;
 --bgform:#333333;
 }
-
+html{
+    background-image:linear-gradient(180deg, rgba(230,138,68,0) 0%, rgba(15, 21, 19, 0.418) 0%), url(https://i0.wp.com/thebutlercollegian.com/wp-content/uploads/2019/03/netflix-image.jpg?w=1280&ssl=1);
+    width: 100%;
+ 
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 header img{
     width: 170px;
     display: flex;
-    padding: 20px;
+    padding: 40px;
+    margin-bottom: 80px;
 }
 
 .login-div{
-    background-color: rgba(0,0,0,.75);
+    background-color: rgba(0, 0, 0, 0.603);
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
@@ -40,18 +48,43 @@ header img{
     -ms-flex-direction: column;
     flex-direction: column;
     margin: auto;
-    min-height: 515px;
-    padding: 10px 20px;
-    width: 500px;
+    min-height: 615px;
+    width: 570px;
 }
 
 .login-div h1{
     color: var(--text);
-    padding: 20px;
+    margin: 20px;
+    padding: 30px;
+    font-size: 2.3em;
+    letter-spacing: 2px;
+}
+.input-text{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
 }
 .input-text input{
-    display: block;
-    margin: auto;
+    margin: 20px;
+    border: 0px;
+    width:100%;
+    border-radius: 4px 4px;
+    font-size: 1em;
+    width: 200px;
+    padding: 20px 50px;
     background-color: var(--bgform);
     font-family: 'PT Sans Narrow', sans-serif;
+}
+button{
+    background-color: var(--clr);
+    color: var(--text);
+    padding: 15px 30px;
+    border: 0px;
+    display: block;
+    margin: auto;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+    width: 400px;
 }
