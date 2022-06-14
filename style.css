@@ -13,9 +13,8 @@
 --bgform:#333333;
 }
 html{
-    background-image:linear-gradient(180deg, rgba(230,138,68,0) 0%, rgba(15, 21, 19, 0.418) 0%), url(https://i0.wp.com/thebutlercollegian.com/wp-content/uploads/2019/03/netflix-image.jpg?w=1280&ssl=1);
+    background-image:linear-gradient(180deg, rgba(230,138,68,0) 0%, rgba(15, 21, 19, 0.555) 0%), url(./bg.png);
     width: 100%;
- 
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -23,10 +22,10 @@ html{
 header img{
     width: 170px;
     display: flex;
-    padding: 40px;
-    margin-bottom: 80px;
+    padding: 20px 50px;
 }
 
+    
 .login-div{
     background-color: rgba(0, 0, 0, 0.603);
     -webkit-border-radius: 4px;
@@ -49,14 +48,18 @@ header img{
     flex-direction: column;
     margin: auto;
     min-height: 615px;
-    width: 570px;
+    width: 460px;
 }
 
 .login-div h1{
     color: var(--text);
-    margin: 20px;
-    padding: 30px;
-    font-size: 2.3em;
+    display: flex;
+    justify-content: left;
+    text-align: justify;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 55px;
+    font-size: 2.1em;
     letter-spacing: 2px;
 }
 .input-text{
@@ -67,24 +70,62 @@ header img{
     align-items: center;
 }
 .input-text input{
-    margin: 20px;
     border: 0px;
+    margin: 20px;
     width:100%;
     border-radius: 4px 4px;
     font-size: 1em;
-    width: 200px;
-    padding: 20px 50px;
+    width: 280px;
+    padding: 15px 23px;
     background-color: var(--bgform);
     font-family: 'PT Sans Narrow', sans-serif;
 }
 button{
     background-color: var(--clr);
     color: var(--text);
-    padding: 15px 30px;
-    border: 0px;
-    display: block;
-    margin: auto;
+    padding: 13px 30px;
+    border: 5px black;
+    display: flex;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto 4px;
     font-size: 0.8em;
     letter-spacing: 2px;
-    width: 400px;
+    width: 330px;
+}
+
+.remember-div{
+    display: flex;
+    color: var(--subtext);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px;
+    letter-spacing: 1px;
+}
+.remember-div a{
+    color:var(--subtext);
+    text-decoration: none;
+    letter-spacing: 0.4px;
+}
+.help{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    font-size: 1.1em;
+    color: var(--subtext);
+    letter-spacing: 0.5px;
+}
+.help a{
+    color: var(--text);
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.captcha{
+color: var(--subtext);
+display: block;
+padding: 40px;
+margin: auto;
 }
