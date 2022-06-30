@@ -150,12 +150,7 @@ footer li{
 @media (max-width:560px){
     footer{
         margin-top: 15px;
-        padding: 20px;
-    }
-    footer li{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: none;
     }
 
     header img{
